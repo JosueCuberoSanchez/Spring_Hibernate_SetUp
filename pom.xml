@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>group-id</groupId>
+    <artifactId>artifact-id</artifactId>
+    <version>version</version>
+    <packaging>pom</packaging>
+    <name>artifact-id</name>
+
+    <developers>
+        <developer>
+            <name>Josué Cubero Sánchez</name>
+            <email>josue.cubero@ucr.ac.cr</email>
+            <organization>Universidad de Costa Rica</organization>
+            <roles>
+                <role>Developer</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>repo-connection</connection>
+        <developerConnection>repo-dev-connection</developerConnection>
+        <tag>repo-tag</tag>
+        <url>repo-url</url>
+    </scm>
+
+    <modules>
+        <module>artifact-id-core</module>
+        <module>artifact-id-ws</module>
+    </modules>
+
+    <properties>
+        <spring.version>5.0.6.RELEASE</spring.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+</project>
